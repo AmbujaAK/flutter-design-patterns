@@ -16,12 +16,7 @@ class RandomisePropertiesCommand implements ICommand {
   void execute() {
     final shape = originator.state;
 
-    shape.color = Color.fromRGBO(
-      random.integer(255),
-      random.integer(255),
-      random.integer(255),
-      1.0,
-    );
+    shape.color = Colors.white;
     shape.height = random.integer(150, min: 50).toDouble();
     shape.width = random.integer(150, min: 50).toDouble();
   }
